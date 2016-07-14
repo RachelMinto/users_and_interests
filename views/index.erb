@@ -1,0 +1,7 @@
+  <div class="header"><h4> Meet the Users </h4></div>
+
+  <% @users.keys.each do |user|%>
+    <div class="user_list">
+      <p class="bubble"><a href="/<%= user %>"><%= user %></a></p>
+    </div>
+  <% end %>

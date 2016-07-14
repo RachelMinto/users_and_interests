@@ -1,0 +1,14 @@
+  <div class="header"><h4> Meet <%= @user.capitalize %>!</h4></div>
+  
+  <p><em><%= @email %></em></p>
+
+  <p><%= @user.capitalize %> is interested in <%= @interests %></p>
+
+  <p><h5>Interested in another user?</h5></p>
+
+  <% @other_users.each do |user|%>
+    <div class="user_list small_list">
+      <p class="bubble"><a href="/<%= user %>"><%= user %></a></p>
+    </div>
+  <% end %>
+
